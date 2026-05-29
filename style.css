@@ -83,6 +83,13 @@ body {
 
 .toolbar button:hover { text-decoration: underline; }
 
+.wip {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-left: auto;
+  letter-spacing: 0.03em;
+}
+
 .marquee {
   display: block;
   font-family: 'Courier New', monospace;
