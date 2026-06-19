@@ -55,8 +55,7 @@ body {
   max-width: 680px;
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
-  transition: background 0.15s, color 0.15s;
-  text-align: justify;
+  text-align: left;
 }
 
 .toolbar {
@@ -84,23 +83,6 @@ body {
 
 .toolbar button:hover { text-decoration: underline; }
 
-.wip {
-  font-size: 0.75rem;
-  color: var(--muted);
-  margin-left: auto;
-  letter-spacing: 0.03em;
-}
-
-.marquee {
-  display: block;
-  font-family: 'Courier New', monospace;
-  font-size: 0.8rem;
-  color: var(--muted);
-  border-bottom: 1px solid var(--border);
-  padding: 0.3rem 0;
-  margin: 0 -1.5rem;
-}
-
 header {
   padding-top: 2.5rem;
   padding-bottom: 0.5rem;
@@ -113,15 +95,6 @@ h1 {
   font-weight: bold;
   margin-bottom: 0.25rem;
   text-align: left;
-}
-
-.cursor {
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
 }
 
 .subtitle {
@@ -230,18 +203,12 @@ footer {
   line-height: 2;
 }
 
-.footer-joke {
-  font-size: 0.75rem;
-  opacity: 0.65;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .cursor { animation: none; }
   body { transition: none; }
 }
 
 @media print {
-  .toolbar, .marquee, .cursor { display: none; }
+  .toolbar { display: none; }
   body { background: white; color: black; max-width: 100%; padding: 1rem; }
   a { color: black; }
 }
